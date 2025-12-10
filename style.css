@@ -1,0 +1,148 @@
+/* --- 1. Basic Reset & Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Basic, clean font for readability */
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+}
+
+body {
+    background-color: #f8f8f8; /* Very light gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- 2. Header and Navigation --- */
+header {
+    background: #c0392b; /* Deep Red for the blood theme */
+    color: white;
+    padding: 1.5rem 0; /* Increased padding */
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.75rem;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f; /* Yellow for hover effect */
+    border-bottom: 2px solid #f1c40f;
+}
+
+/* --- 3. Main Content Container (Applies to all pages) --- */
+main {
+    padding: 30px;
+    margin: 40px auto; /* Increased margin */
+    max-width: 900px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Slightly stronger shadow */
+    min-height: calc(100vh - 180px); /* Ensures the main content takes up enough space */
+}
+
+h2 {
+    color: #e74c3c; /* Brighter red for headings */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #f0f0f0;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+/* --- 4. Styling for About Page (Lists) --- */
+/* (Applies to the about.html page list) */
+ul {
+    list-style: disc inside;
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* --- 5. Styling for Search & Register Pages (Forms) --- */
+
+/* General form styling (applies to both) */
+form {
+    background: #fffafa; /* Off-white, subtle color */
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50; /* Darker blue/gray for label text */
+    margin-top: 15px;
+}
+
+input[type="text"], input[type="tel"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Radio buttons for the register page */
+#regDonor, #regReceiver {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Submit/Action Button Styling */
+button, input[type="submit"] {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #c0392b;
+}
+
+/* Search results area styling (for search.html) */
+#searchResults {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px dashed #e74c3c;
+    border-radius: 8px;
+    background: #fef0f0; /* Very light red background for results */
+}
+
+/* --- 6. Footer --- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50; /* Dark blue/gray for footer */
+    color: #ecf0f1;
+    margin-top: 20px;
+    width: 100%;
+}
+.A {
+    width: 600px;
+}
